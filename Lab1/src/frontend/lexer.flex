@@ -45,7 +45,7 @@ Letter = [a-zA-Z]
 Digit= [0-9]
 Character = {Letter} | {Digit} | "_"
 Identifier = {Letter}{Character}*
-IntegerLiteral = {Digit}*
+IntegerLiteral = {Digit}+
 StringLiteral = \"([^\"]*)\"
 
 %%
@@ -95,6 +95,7 @@ StringLiteral = \"([^\"]*)\"
 
 /* literals */
 {StringLiteral} { return token(Token.Type.STRING_LITERAL, trimQuotes(yytext())); }
+{IntegerLiteral} { return token(Token.Type.INT_LITERAL, trimQuotes(yytext())); }
 
 {WhiteSpace} { /* ignore */ }
 

@@ -56,6 +56,67 @@ public class LexerTests {
 	}
 
 	@Test
+	public void testKWsWithNewLine() {
+		// first argument to runtest is the string to lex; the remaining arguments
+		// are the expected tokens
+		runtest("module false\n\treturn while",
+				new Token(MODULE, 0, 0, "module"),
+				new Token(FALSE, 0, 7, "false"),
+				new Token(RETURN, 1, 1, "return"),
+				new Token(WHILE, 1, 8, "while"),
+				new Token(EOF, 1, 13, ""));
+	}
+
+	@Test
+	public void testPSs() {
+		runtest(", [ module",
+				new Token(COMMA, 0, 0, ","),
+				new Token(LBRACKET, 0, 2, "["),
+				new Token(MODULE, 0, 4, "module"),
+				new Token(EOF, 0, 10, ""));
+	}
+
+	@Test
+	public void testOperators() {
+		runtest("+==<==",
+				new Token(PLUS, 0, 0, "+"),
+				new Token(EQEQ, 0, 1, "=="),
+				new Token(LEQ, 0, 3, "<="),
+				new Token(EQL, 0, 5, "="),
+				new Token(EOF, 0, 6, ""));
+	}
+
+	@Test
+	public void testIDs1() {
+		runtest("M m_ m0 m0_",
+				new Token(ID, 0, 0, "M"),
+				new Token(ID, 0, 2, "m_"),
+				new Token(ID, 0, 5, "m0"),
+				new Token(ID, 0, 8, "m0_"),
+				new Token(EOF, 0, 11, ""));
+	}
+
+//	@Test
+//	public void testIDs2() {
+//		runtest("_m",
+//				new Token(ID, 0, 0, "_m"));
+//	}
+
+		@Test
+		public void testIntegerLiteral1() {
+			runtest("12 0012 +12 -12",
+					new Token(INT_LITERAL, 0, 0, "12"),
+					new Token(INT_LITERAL, 0, 3, "0012"),
+					new Token(PLUS, 0, 8, "+"),
+					new Token(INT_LITERAL, 0, 9, "12"),
+					new Token(MINUS, 0, 12, "-"),
+					new Token(INT_LITERAL, 0, 13, "12"),
+					new Token(EOF, 0, 15, ""));
+		}
+
+
+
+	@Test
 	public void testStringLiteralWithDoubleQuote() {
 		runtest("\"\"\"",
 				new Token(STRING_LITERAL, 0, 0, ""),
@@ -64,11 +125,22 @@ public class LexerTests {
 	}
 
 	@Test
-	public void testStringLiteral() {
+	public void testStringLiteral1() {
 		runtest("\"\\n\"",
 				new Token(STRING_LITERAL, 0, 0, "\\n"),
 				new Token(EOF, 0, 4, ""));
 	}
+
+	@Test
+	public void testStringLiteral2() {
+		runtest("\"module\"",
+				new Token(STRING_LITERAL, 0, 0, "module"),
+				new Token(EOF, 0, 8, ""));
+	}
+
+
+
+
 
 
 }
