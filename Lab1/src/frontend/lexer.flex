@@ -45,7 +45,7 @@ Letter = [a-zA-Z]
 Digit= [0-9]
 Character = {Letter} | {Digit} | "_"
 Identifier = {Letter}{Character}*
-IntegerLiteral = {Digit}+
+IntegerLiteral = {Digit}+ | {Digit}+\.{Digit}+
 StringLiteral = \"([^\"]*)\"
 
 %%

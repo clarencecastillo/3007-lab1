@@ -99,20 +99,23 @@ public class LexerTests {
 //	@Test
 //	public void testIDs2() {
 //		runtest("_m",
-//				new Token(ID, 0, 0, "_m"));
+//				new Token(EOF, 0, 0, "_m"));
 //	}
 
-		@Test
-		public void testIntegerLiteral1() {
-			runtest("12 0012 +12 -12",
-					new Token(INT_LITERAL, 0, 0, "12"),
-					new Token(INT_LITERAL, 0, 3, "0012"),
-					new Token(PLUS, 0, 8, "+"),
-					new Token(INT_LITERAL, 0, 9, "12"),
-					new Token(MINUS, 0, 12, "-"),
-					new Token(INT_LITERAL, 0, 13, "12"),
-					new Token(EOF, 0, 15, ""));
-		}
+	@Test
+	public void testIntegerLiteral1() {
+		runtest("12 0012 +12 -12 12.0 12.12 0012.12",
+				new Token(INT_LITERAL, 0, 0, "12"),
+				new Token(INT_LITERAL, 0, 3, "0012"),
+				new Token(PLUS, 0, 8, "+"),
+				new Token(INT_LITERAL, 0, 9, "12"),
+				new Token(MINUS, 0, 12, "-"),
+				new Token(INT_LITERAL, 0, 13, "12"),
+				new Token(INT_LITERAL, 0, 16, "12.0"),
+				new Token(INT_LITERAL, 0, 21, "12.12"),
+				new Token(INT_LITERAL, 0, 27, "0012.12"),
+				new Token(EOF, 0, 34, ""));
+	}
 
 
 
@@ -137,10 +140,4 @@ public class LexerTests {
 				new Token(STRING_LITERAL, 0, 0, "module"),
 				new Token(EOF, 0, 8, ""));
 	}
-
-
-
-
-
-
 }
