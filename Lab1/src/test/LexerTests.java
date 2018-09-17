@@ -55,6 +55,15 @@ public class LexerTests {
 				new Token(EOF, 0, 25, ""));
 	}
 
+  @Test
+  public void testIDAsKWsNoSpace() {
+    // first argument to runtest is the string to lex; the remaining arguments
+    // are the expected tokens
+    runtest("modulefalsereturnwhile",
+        new Token(ID, 0, 0, "modulefalsereturnwhile"),
+        new Token(EOF, 0, 22, ""));
+  }
+
 	@Test
 	public void testKWsWithNewLine() {
 		// first argument to runtest is the string to lex; the remaining arguments
@@ -96,6 +105,29 @@ public class LexerTests {
 				new Token(EOF, 0, 11, ""));
 	}
 
+  @Test
+  public void testIDs2() {
+    runtest("2while",
+        new Token(INT_LITERAL, 0, 0, "2"),
+        new Token(WHILE, 0, 1, "while"),
+        new Token(EOF, 0, 6, ""));
+  }
+
+  @Test
+  public void testIDs3() {
+    runtest("2 while",
+        new Token(INT_LITERAL, 0, 0, "2"),
+        new Token(WHILE, 0, 2, "while"),
+        new Token(EOF, 0, 7, ""));
+  }
+
+  @Test
+  public void testIDs4() {
+    runtest("while2while",
+        new Token(ID, 0, 0, "while2while"),
+        new Token(EOF, 0, 11, ""));
+  }
+
 //	@Test
 //	public void testIDs2() {
 //		runtest("_m",
@@ -103,21 +135,24 @@ public class LexerTests {
 //	}
 
 	@Test
-	public void testIntegerLiteral1() {
-		runtest("12 0012 +12 -12 12.0 12.12 0012.12",
-				new Token(INT_LITERAL, 0, 0, "12"),
-				new Token(INT_LITERAL, 0, 3, "0012"),
-				new Token(PLUS, 0, 8, "+"),
-				new Token(INT_LITERAL, 0, 9, "12"),
-				new Token(MINUS, 0, 12, "-"),
-				new Token(INT_LITERAL, 0, 13, "12"),
-				new Token(INT_LITERAL, 0, 16, "12.0"),
-				new Token(INT_LITERAL, 0, 21, "12.12"),
-				new Token(INT_LITERAL, 0, 27, "0012.12"),
-				new Token(EOF, 0, 34, ""));
-	}
+  public void testIntegerLiteral1() {
+    runtest("12 0012 +12 -12 1200",
+        new Token(INT_LITERAL, 0, 0, "12"),
+        new Token(INT_LITERAL, 0, 3, "0012"),
+        new Token(PLUS, 0, 8, "+"),
+        new Token(INT_LITERAL, 0, 9, "12"),
+        new Token(MINUS, 0, 12, "-"),
+        new Token(INT_LITERAL, 0, 13, "12"),
+        new Token(INT_LITERAL, 0, 16, "1200"),
+        new Token(EOF, 0, 20, ""));
+  }
 
-
+  @Test
+  public void testStringLiteral3() {
+    runtest("\"12\"",
+        new Token(STRING_LITERAL, 0, 0, "12"),
+        new Token(EOF, 0, 4, ""));
+  }
 
 	@Test
 	public void testStringLiteralWithDoubleQuote() {
