@@ -45,7 +45,7 @@ Letter = [a-zA-Z]
 Digit= [0-9]
 Character = {Letter} | {Digit} | "_"
 Identifier = {Letter}{Character}*
-IntegerLiteral = {Digit}+ | {Digit}+\.{Digit}+
+IntegerLiteral = {Digit}+
 StringLiteral = \"([^\"]*)\"
 
 %%
@@ -65,7 +65,7 @@ StringLiteral = \"([^\"]*)\"
 "return" { return token(Token.Type.RETURN); }
 "int" { return token(Token.Type.INT); }
 "type" { return token(Token.Type.TYPE); }
-"void" { return token(Token.Type.WHILE); }
+"void" { return token(Token.Type.VOID); }
 
 /* punctuations */
 "," { return token(Token.Type.COMMA); }
@@ -92,6 +92,7 @@ StringLiteral = \"([^\"]*)\"
 
 /* identifier */
 {Identifier} { return token(Token.Type.ID); }
+{Digit}{Identifier} { throw new Error("identifier cannot start with digit '" + yytext() + "'"); }
 
 /* literals */
 {StringLiteral} { return token(Token.Type.STRING_LITERAL, trimQuotes(yytext())); }

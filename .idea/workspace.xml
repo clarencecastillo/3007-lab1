@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c326cef4-dc5b-471a-9f53-ed135e83c86c" name="Default Changelist" comment="" />
+    <list default="true" id="c326cef4-dc5b-471a-9f53-ed135e83c86c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Lab1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/bin/lexer/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/lexer/Lexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/bin/test/LexerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/test/LexerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/gen/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/gen/lexer/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/frontend/lexer.flex" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/frontend/lexer.flex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/test/LexerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/test/LexerTests.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/Lab1/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,16 +22,18 @@
     <session id="-1903316111">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="classpath" value="1" />
-          <entry key="flex" value="3" />
+          <entry key="flex" value="4" />
           <entry key="iml" value="1" />
           <entry key="java" value="19" />
           <entry key="project" value="1" />
@@ -34,20 +45,21 @@
           <entry key="Eclipse" value="2" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="19" />
+          <entry key="JFlex" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="flex" value="1377" />
-          <entry key="java" value="16" />
+          <entry key="flex" value="1432" />
+          <entry key="java" value="158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="24" />
-          <entry key="JFlex" value="1341" />
+          <entry key="JAVA" value="166" />
+          <entry key="JFlex" value="1396" />
           <entry key="PLAIN_TEXT" value="28" />
         </counts>
       </usages-collector>
@@ -58,18 +70,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab1/src/frontend/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="58" column="7" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="7" />
+            <state relative-caret-position="361">
+              <caret line="94" column="3" lean-forward="true" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab1/src/frontend/lexer.flex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="89" column="38" lean-forward="true" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+            <state relative-caret-position="-186">
+              <caret line="50" selection-start-line="50" selection-end-line="53" selection-end-column="14" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#348#349#0" expanded="true" />
                 <element signature="e#407#408#0" expanded="true" />
                 <element signature="e#807#808#0" expanded="true" />
@@ -79,20 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab1/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lab1/src/test/LexerTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+            <state relative-caret-position="1649">
+              <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,11 +111,14 @@
       <find>boolean</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Lab1/src/test/LexerTests.java" />
         <option value="$PROJECT_DIR$/Lab1/src/frontend/lexer.flex" />
+        <option value="$PROJECT_DIR$/Lab1/src/test/LexerTests.java" />
       </list>
     </option>
   </component>
@@ -126,11 +133,14 @@
     <option name="width" value="1920" />
     <option name="height" value="1177" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,6 +157,12 @@
               <item name="lab1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -157,8 +173,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -168,7 +182,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536760846263" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537083380598" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -253,43 +267,45 @@
       <updated>1536734846884</updated>
       <workItem from="1536734849901" duration="1267000" />
       <workItem from="1536736139059" duration="6312000" />
+      <workItem from="1536849942352" duration="73000" />
+      <workItem from="1537079855419" duration="4078000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Lexer_Tests - 2018.09.12 at 16h 17m 46s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 06m 36s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Lexer_Tests - 2018.09.12 at 16h 18m 10s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 07m 26s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Lexer_Tests - 2018.09.12 at 16h 18m 59s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 07m 34s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Lexer_Tests - 2018.09.12 at 16h 20m 38s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 13m 29s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Lexer_Tests - 2018.09.12 at 16h 26m 26s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 13m 38s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Lexer_Tests - 2018.09.12 at 16h 27m 10s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 23m 58s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Lexer_Tests - 2018.09.12 at 17h 19m 54s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 24m 02s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Lexer_Tests - 2018.09.12 at 17h 23m 13s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 24m 29s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Lexer_Tests - 2018.09.12 at 17h 35m 41s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 36m 11s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Lexer_Tests - 2018.09.12 at 22h 00m 03s.xml">
+    <history-entry file="Lexer_Tests - 2018.09.16 at 15h 36m 22s.xml">
       <configuration name="Lexer Tests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7579000" />
+    <option name="totallyTimeSpent" value="11730000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,7 +320,7 @@
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25772098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -313,7 +329,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32830188" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32768363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -377,30 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab1/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab1/src/frontend/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab1/src/test/LexerTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lab1/gen/lexer/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -412,15 +404,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lab1/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab1/src/frontend/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="94" column="3" lean-forward="true" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lab1/src/frontend/lexer.flex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="89" column="38" lean-forward="true" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+        <state relative-caret-position="-186">
+          <caret line="50" selection-start-line="50" selection-end-line="53" selection-end-column="14" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#348#349#0" expanded="true" />
             <element signature="e#407#408#0" expanded="true" />
             <element signature="e#807#808#0" expanded="true" />
             <element signature="e#852#853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab1/src/test/LexerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
